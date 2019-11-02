@@ -21,7 +21,7 @@ Vue.component('who-watch', {
             <h3>New User</h3>
             <input type="text" v-model="userName" placeholder='User Name'>
             <div class="new-user-icon">
-            <img src="/img/886f136f30982ab729d1d3b5f67c52af.png" v-on:click="onAddUser" >
+            <img src="img/886f136f30982ab729d1d3b5f67c52af.png" v-on:click="onAddUser" >
             </div>
             <button v-on:click="onAddUser">Add</button>
             </li>
