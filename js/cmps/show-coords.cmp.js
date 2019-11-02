@@ -22,5 +22,6 @@ Vue.component('coords', {
     },
     created(){
         document.addEventListener('mousemove',this.showCordenaits)
+        document.addEventListener('touchmove',this.showCordenaits)
     }
 })
