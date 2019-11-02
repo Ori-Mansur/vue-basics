@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: McLaren;
+    src: url(../fonts/McLaren-Regular.ttf);
+}
+
+html {
+    font-family: McLaren;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: #de0611;
+    font-family: Helvetica;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: #de0611;
+    border-radius: 3px;
+    color: #fff;
+    max-width: 17.1875rem;
+    padding: 13px 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer {
+    height: 120px;
+    background-color: black;
+}
+
+.main-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-show-area {
+    width: 50%;
+    display: flex;
+}
+
+.time-area {
+    cursor: pointer;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.coords {
+    border: 0.5px solid black;
+    background-color: rgb(216, 216, 216);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.countdown {
+    border: 1px solid black;
+    text-align: center;
+    width: 50%;
+}
+
+.countdown span {
+    font-size: 40px;
+}
+
+.red {
+    color: red;
+}
+
+.watch li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.watch ul {
+    margin-left: 10px;
+    padding: 0;
+}
+
+.new-user-icon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.new-user-icon img {
+    height: 70%;
+    margin: auto auto;
+}
+
+.new-user input {
+    width: 150px;
+    display: block;
+    text-align: center;
+    font-family: McLaren;
+}
+
+.new-user button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.users-area {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    margin: 8px;
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.icon img {
+    height: 100%;
+}
+
+.movie-deatails {
+    display: grid;
+    grid-template-columns: 200px auto auto;
+}
+
+.movie {
+    border: 1px solid black;
+}
+
+.movie h3 {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.hide {
+    display: none;
+    color: red;
+}
+
+@media screen and (max-width:700px) {
+    .users-area {
+        grid-template-columns: auto auto;
+    }
+    .time-show-area {
+        width: 100%;
+    }
+}
